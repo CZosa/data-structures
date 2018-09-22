@@ -15,12 +15,12 @@ describe('graph', function() {
     expect(graph.forEachNode).to.be.a('function');
   });
 
-  it('should store values as nodes that were inserted', function() {
+  it('should store values as nodes that were inserted', function() { //contains
     graph.addNode(1);
     expect(graph.contains(1)).to.equal(true);
   });
 
-  it('should remove nodes that were inserted', function() {
+  it('should remove nodes that were inserted', function() { //remove
     graph.addNode(2);
     expect(graph.contains(2)).to.equal(true);
     graph.removeNode(2);

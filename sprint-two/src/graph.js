@@ -47,7 +47,7 @@ Graph.prototype.hasEdge = function(fromNode, toNode) {
   checkNodes.push(fromNode, toNode);
   checkNodes.sort();
   for (var i = 0; i < this.edges.length; i++) {
-    console.log(this.edges[i].sort());
+    // console.log(this.edges[i].sort());
     var sortedEdge = this.edges[i].sort();
     
     if (sortedEdge[0] === checkNodes[0] && sortedEdge[1] === checkNodes[1]) {
@@ -68,7 +68,7 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
   var deleteEdge = [];
   deleteEdge.push(fromNode, toNode);
   deleteEdge.sort();
-  console.log(this.edges);
+  // console.log(this.edges);
   for (var i = 0; i < this.edges.length; i++) {
     if (this.edges[i][0] === deleteEdge[0] && this.edges[i][1] === deleteEdge[1]) {
       delete this.edges[i];
